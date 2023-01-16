@@ -16,14 +16,8 @@ function cardGallery(galleryItems) {
       </div>`;
     }).join('');  
 }
-galleryEl.addEventListener('click', onImageClick)
-function onImageClick(event) {
-    event.preventDefault()
-    if (event.target.nodeName !== 'IMG') {
-        return;
-    }
-}
-const lightbox  = new SimpleLightbox('a', {
+
+const lightbox  = new SimpleLightbox('gallery__item', {
     captionsData: 'alt',
     captionPosition: 'bottom',
     captionDelay: 250
