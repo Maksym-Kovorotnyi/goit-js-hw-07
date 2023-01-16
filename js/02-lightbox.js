@@ -17,7 +17,7 @@ function cardGallery(galleryItems) {
     }).join('');  
 }
 
-const lightbox  = new SimpleLightbox('gallery__item', {
+const lightbox  = new SimpleLightbox('.gallery__item', {
     captionsData: 'alt',
     captionPosition: 'bottom',
     captionDelay: 250
